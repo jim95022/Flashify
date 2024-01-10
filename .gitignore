@@ -16,4 +16,5 @@ media
 ### Dev tools
 .idea
 .venv
+.DS_store
 
