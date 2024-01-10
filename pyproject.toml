@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "flashify"
+version = "0.1.0"
+description = "Card Memorization App."
+authors = ["Yurii Bykov <jim95022@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^5.0.1"
+djangorestframework = "^3.14.0"
+django-filter = "^23.5"
+
+[tool.poetry.group.dev.dependencies]
+Markdown = "^3.5.2"
+black = "^23.12.1"
+flake8 = "^7.0.0"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
