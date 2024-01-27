@@ -1,5 +1,6 @@
 from django.test import TestCase
 from selenium.webdriver.chrome.webdriver import WebDriver
+from selenium import webdriver
 
 
 class FunctionalTest(TestCase):
@@ -7,7 +8,9 @@ class FunctionalTest(TestCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.selenium = WebDriver()
+        options = webdriver.ChromeOptions()
+        options.add_argument(r"user-data-dir=" + ".browser_session")
+        cls.selenium = WebDriver(options=options)
         cls.selenium.implicitly_wait(10)
 
     @classmethod

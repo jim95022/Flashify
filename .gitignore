@@ -18,3 +18,4 @@ media
 .venv
 .DS_store
 .env
+.browser_session
