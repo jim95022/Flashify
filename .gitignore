@@ -17,4 +17,4 @@ media
 .idea
 .venv
 .DS_store
-
+.env
